@@ -1,0 +1,27 @@
+# Ghost Global Configuration
+version: 1
+user:
+  name: "{{user_name}}"
+# Registered projects (populated by ghost init)
+projects: []
+
+# Notification settings
+notifications:
+  enabled: true
+  channel: ntfy
+  ntfy:
+    server: https://ntfy.sh
+    topic: {{ntfy_topic}}
+
+  # Notification rules
+  rules:
+    - type: question
+      blocking: true
+      notify: always
+    - type: approval
+      notify: always
+    - type: pending-close
+      notify: daily-digest
+    - type: error
+      priority: urgent
+      notify: always

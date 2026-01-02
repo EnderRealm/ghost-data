@@ -1,0 +1,20 @@
+# {{project_name}}
+
+A new project by {{author}}.
+
+## Getting Started
+
+```bash
+git clone git@github.com:{{github_username}}/{{project_name}}.git
+cd {{project_name}}
+Development
+This project uses Ghost for workflow management.
+
+# Create an issue
+ghost issue create "My first feature" --type feature
+
+# List issues
+ghost issue list
+License
+Copyright {{year}} {{author}}. All rights reserved.
+Created on {{date}}
